@@ -69,8 +69,6 @@
     }
 
   
-
-
     .star{
         position: absolute;
         height: 60px;
@@ -130,16 +128,23 @@
 
 /* RSVP */ 
 
-    section.banner{
+  form{
+        padding: 0 10px;
+    }
+    .invite p{
         padding: 0 10px;
     }
     div form .form-control {
         width: 100%;
+
         }
 
     div form .form-control input{
         width: 80%;
+        
     }
+
+
 
     /* Important */ 
     
@@ -197,7 +202,7 @@
 
     div form .form-control input{
         width: 100%;
-        font-size: 12px;
+        font-size: 14px;
     }
 
   
