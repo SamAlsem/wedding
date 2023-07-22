@@ -28,13 +28,7 @@
     section.banner.view{
         margin-top: -20px;
     }    
-        div#accomodation.container-content{
-            background-color:#d67747;
-        }    
     
-    section#registry.banner.longer{
-        background-color: #ce6857;
-    }   
     
     
 }
@@ -71,11 +65,10 @@
         font-size: 1em;
         padding-left: 10px;
         padding-right: 10px;    
+    
     }
 
-    .banner .content{
-        margin-top: 70px;
-    }
+  
 
 
     .star{
@@ -108,18 +101,19 @@
         height: 40px;
         width: 80px;
         left: 78%;
-        top: 2%;
+        top: 3%;
     
         }
 
     footer{
         flex-direction: column;
-        height: auto;   
+        height: auto;  
         width: 100%;
         align-items: center;
-        justify-content: center; 
+        justify-content: center;
         
     }
+
 
       
 }
@@ -135,18 +129,16 @@
     }
 
 /* RSVP */ 
+
+    section.banner{
+        padding: 0 10px;
+    }
     div form .form-control {
         width: 100%;
         }
 
     div form .form-control input{
         width: 80%;
-    }
-
-/* Accomodation */ 
-
-    div#accomodation.container-content{
-        padding: 0 50px;
     }
 
     /* Important */ 
@@ -157,29 +149,11 @@
    
     }
   
-
-     /* Payment  */ 
-
-    div.payment{
-        margin-right: 20px;
-    } 
-
-     div.payment-content{
-        position: relative;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        margin: auto;
-       
-      
-    
-
-    } 
-
       /* Footer */ 
  
     footer{
-        font-size: 12px;
+        font-size: 16px;
+        margin: 5px;
     }
 
    
@@ -194,17 +168,7 @@
         text-align: center;
     }
 
-    h1{
-        font-size: 30px;
-    }
 
-    h2{
-        font-size: 20px;
-    }
-
-    p{
-        font-size: 15px;
-    }
 
     .banner .content{
         margin-top: 20px;
@@ -223,6 +187,10 @@
         padding-top: 250px;
     }
 
+    .section.banner{
+        padding: 0 10px;
+    }
+
     div form .form-control {
         width: 100%;
         }
@@ -239,22 +207,7 @@
     }
 
     
-
-    section#registry.banner.longer{
-        display: flex;
-        align-items: center;
-        justify-content: center; 
-        text-align: center;
-        padding: 0px 0px 0px;
-        border-radius:0%;
-        width: 100%;
-
-       
-    }
-  
- 
-   
-    
+     
 }
 
 /* Core */
@@ -276,7 +229,7 @@
 }
 
 body{
-    min-height: 1000px;
+    height: 100%;
     background-color: #e8cfc1;
 }
 
@@ -373,12 +326,12 @@ header.sticky{
     overflow: hidden;
 }
 
-.banner h1{
+h1{
     font-size: 48px;
     font-weight: bold;
 }
 
-.banner h2{
+h2{
     font-size:36px;
 }
 
@@ -388,7 +341,7 @@ header.sticky{
 
 }
 
-.banner .mountain{
+.banner .mountain, .accom .mountain{
     height: 100px;
     width: 200px;
     
@@ -421,7 +374,6 @@ header.sticky{
     width: 100%;
     height: 100%;
     background: #fff;
-    border-radius: 0 0 90% 90%/0 0 100% 100%;
 
 }
 
@@ -464,14 +416,16 @@ div input.btn{
 
 /*accomodation*/
 
-.view{
-    min-height: 115vh;
+section.accom{
+    background-color: #d67747;
 }
-
-.banner .container{
+.accom .container{
     color:#e8cfc1;
-    display: inline-block;
-    position: absolute;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     width: 100%;
     height: 100%;
     background-color: #d67747;
@@ -480,17 +434,17 @@ div input.btn{
 
 }
 
-.banner .container h1{
+.accom.container h1{
     color: #e8cfc1;
 }
 
-.banner .container-content{
-    position: absolute;
+.accom .container-content{
+    position: relative;
     padding: 0 150px;
 }
 
 
-.banner .container .btn{
+div .btn2{
     background: #e8cfc1;
     display: inline-block;
     padding: 0 50px;
@@ -504,7 +458,7 @@ div input.btn{
     
 }
 
-.banner .container .btn a{
+div .btn2 a{
     text-decoration: none;
 }
 
@@ -530,48 +484,38 @@ div input.btn{
 
 /*payments*/
 
-.longer{
-    min-height: 225vh;
-
-}
-
-.banner .payment{
+.registry .payment{
     color:#e8cfc1;
-    display: inline-block;
-    position: absolute;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     width: 100%;
     height: 100%;
-    border-radius: 99% 99% 0% 0%/100% 100% 90% 90%;
     background-color: #ce6857;
-    padding: 100px 0;
+    padding: 50px 20px;
 
 }
 
-.banner .payment h1{
+.registry h1{
+    color: #e8cfc1;
+
+}
+
+.registry h2{
     color: #e8cfc1;
 }
 
-.banner .payment h2{
-    color: #e8cfc1;
-}
 
-.banner .payment-content{
-    position: absolute;
-    padding: 0 150px;
-    margin: auto;
-    padding-bottom: 20px;
-}
 
 /* Footer */
-
-
 
 
 footer{
     position: absolute;
     width: 100%;
-    height: 100%
-    padding: 10px 100px;
+    padding: 10px 0;
     z-index: 10000;
     display: flex;
     justify-content: space-between;
